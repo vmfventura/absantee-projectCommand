@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{58CC7845-DCF5-4A8C-A938-325CBF5DD890}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{5D3124F1-3E5C-4DFA-99B8-EF0BD9338A1A}"
@@ -9,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{1D3C352A-6ED0-42C9-830C-C6F154FF0D66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{F84CD030-C49E-47E7-93FE-8B526E66E181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.IntegrationTests", "WebApi.IntegrationTests\WebApi.IntegrationTests.csproj", "{5D1132EF-BB35-4565-925D-D27AFAF7FFF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +39,9 @@ Global
 		{F84CD030-C49E-47E7-93FE-8B526E66E181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F84CD030-C49E-47E7-93FE-8B526E66E181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F84CD030-C49E-47E7-93FE-8B526E66E181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1132EF-BB35-4565-925D-D27AFAF7FFF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1132EF-BB35-4565-925D-D27AFAF7FFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1132EF-BB35-4565-925D-D27AFAF7FFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1132EF-BB35-4565-925D-D27AFAF7FFF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -24,7 +24,7 @@ public class ProjectController : Controller
     //     IEnumerable<ProjectDTO> projectsDTO = await _projectService.GetAll();
     //     return Ok(projectsDTO);
     // }
-    // //
+
     // [HttpGet("{id}")]
     // private async Task<ActionResult<ProjectDTO>> GetProjectById(long id)
     // {
@@ -36,7 +36,7 @@ public class ProjectController : Controller
     //
     //     return NotFound();
     // }
-    
+
     [HttpPut("{id}")]
     public async Task<IActionResult> PutProject(long id, ProjectDTO projectDTO)
     {
@@ -44,13 +44,13 @@ public class ProjectController : Controller
         {
             return BadRequest();
         }
-    
+
         bool wasUpdated = await _projectService.Update(id, projectDTO, _errorMessages, true);
         if (!wasUpdated)
         {
             return BadRequest(_errorMessages);
         }
-    
+
         return Ok();
     }
 
