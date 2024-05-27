@@ -1,14 +1,11 @@
 using System.Text;
 using Application.DTO;
 using DataModel.Repository;
-using Domain.Model;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using WebApi.IntegrationTests.Fixtures;
 using WebApi.IntegrationTests.Helpers;
-using Xunit;
 using Xunit.Abstractions;
 
 namespace WebApi.IntegrationTests;
@@ -46,7 +43,6 @@ public class SomeIntegrationTests : IClassFixture<IntegrationTestsWebApplication
             endDate =new DateOnly(2023,02,02)
         };
 
-        // var jsonContent = JsonConvert.SerializeObject(newProject);
         var jsonContent = JsonConvert.SerializeObject(newProject);
         var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
@@ -77,7 +73,6 @@ public class SomeIntegrationTests : IClassFixture<IntegrationTestsWebApplication
             endDate =new DateOnly(2023,01,01)
         };
 
-        // var jsonContent = JsonConvert.SerializeObject(newProject);
         var jsonContent = JsonConvert.SerializeObject(newProject);
         var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
